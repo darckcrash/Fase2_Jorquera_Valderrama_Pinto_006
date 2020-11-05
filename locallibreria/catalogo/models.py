@@ -3,7 +3,7 @@ from django.urls import reverse         #redirecciona una url de un libro al bro
 import uuid                             #se utilzia para definir atributos clave (PK)
 
 # Create your models here.
-class Bebida(models.Model):
+class bebida(models.Model):
     #Model representing a book genre."""
 	name = models.CharField(max_length=200)
 	
