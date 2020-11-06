@@ -1,0 +1,91 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+
+    <title>Toffe</title>
+    <link rel="icon" href="{% static 'img/icon.jpg' %}">
+  </head>
+
+  <body>
+    <header>
+
+    </header>
+    <section  class="jumbotron bg-info">
+      <div class="container ">
+        <h1 class="h1"> <strong>Novedades de las Recetas</strong> </h1>
+        <p class="h2"><strong>Desde los pasteles hasta las bebidas.</strong> </p>
+      </div>
+    </section>
+    </header>
+      
+    
+    <section class="main container">
+      <nav aria-label="breadcrumb">
+        <section class="col-md-9">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'novedades' %}">Categoría</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'bebidas' %}">Bebidas frias/calientes</a></li>
+            <li class="breadcrumb-item active">Capuchino</li>
+          </ol>
+          <article class="post clearfix">
+            <a href="#" class="thumb pull-left">
+              <img src="{% static 'img/cap1.jpg' %}" alt="" style="float: left;" width="400" height="250"><h2 class="h2-2"> <strong> Receta de capuchino, paso a paso </strong></h2>
+            </a>
+            <p><span class="psfecha">13 de Octubre del 2020</span> por <span class="posts autor"><a href="#">Bernardo Valderrama</a></span></p>
+            <p class="pcontenido text-justify">
+                Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para otorgarle cremosidad. Hoy en día, el capuchino no solo es común en Italia sino también en todo el mundo. El capuchino se extendió inicialmente por toda Europa, adquiriendo su forma definitiva alrededor de 1950, para luego llegar a Sudamérica, 
+                popularizándose en países como Argentina, Brasil, Bolivia, Chile, Paraguay, Perú y Uruguay.
+              <p>Ingredientes:
+                <ul type="circle">
+                  <li>Una taza de café preparado a gusto</li>
+                  <li>Cacao en polvo para decoración</li>
+                  <li>Una taza de leche entera</li>
+                </ul>
+              </p>
+              <p>
+                Preparación:
+                <ol type="1">
+                    <li>Para empezar ponemos la leche en un bote con tapa o en un recipiente hermético. 
+                        Tapamos bien y agitamos con fuerza durante 30 seg a un minuto hasta que la leche espume bastante y 
+                        aumente mucho su tamaño.</li><hr>
+                    <li>Ese es el recurso rápido pero este proceso lo puedes hacer en una batidora durante 2 min y 
+                        el resultado será aún más espumoso.</li><hr>
+                    <li>Inmediatamente ponemos la leche ya batida en el microondas unos 30 seg y así la espuma se compacta.
+                         Si has usado un hermético o un bote, úsalo para el microondas también.</li><hr>
+                    <li>Ponemos primero esta espuma espesa de leche en la taza de servicio y vamos vertiendo el café azucarado por un lateral con cuidado. De esta forma el café se va abajo y la espuma queda arriba. 
+                        Decoramos espolvoreando con el cacao en polvo y servimos al momento, muy caliente.</li>             
+                  
+                </ol>
+              </p>  
+            </p>
+
+          </article>
+        </section>
+      </nav>
+    </section>
+
+    
+    
+   
+   
+
+  </body>
+  
+ 
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        {% load static %}
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 100vh">
+            <img src="{% static 'img/f1.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1">Bienvenido a Toffe</h1>
+              <p>Aqui podras encontar las mejores recetas de las cafeterias.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 100vh ">
+            <img src="{% static 'img/f2.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1">Bienvenido a Toffe</h1>
+              <p>Aqui podras encontar las mejores recetas de las cafeterias.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 100vh">
+            <img src="{% static 'img/f3.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1">Bienvenido a Toffe</h1>
+              <p>Aqui podras encontar las mejores recetas de las cafeterias.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carruselexamplecaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carruselexamplecaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Acerca de nosotros</h1>
+          <p class="lead text-muted">
+              Sitio destinado a una parte de un proyecto semestral que esta destinado a un 7 esperamos que le guste profe Vivi esta hecho con deprecion y lagrimas 
+
+          </p>
+          
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="{% static 'img/cafe1.jfif' %}" alt="" width="348" height="250">
+                
+                <div class="card-body">
+                  <h5>Sobre el cafe</h5>
+                  <p class="card-text">El cafe que todos tomamos día a día, antes de cada clase normalmente se nos hace muy monotono, a lo cual nosotros recurrimos a variar la forma de disfrutar esta bebida que mayor parte de los alumnos y profesores comparte en las mañana.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="{% static 'img/compu1.jfif' %}" alt="" width="348" height="250">
+                <div class="card-body">
+                  <h5 >¿Quienes somos?</h5>
+                  <p class="card-text">Somos un grupo de estudiantes a los cuales les interesa la preparacion de los distintos tipos de cafe, los cuales queremos compartir con la gente que ingrese a este blog con sus respectivas criticas y reseñas que haran que este sitio mejore cada vez más.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+               <img src="{% static 'img/duoc1.jfif' %}" alt="" width="348" height="250">                      
+               <div class="card-body">
+                 <h5>Nuestra institucion</h5>
+                  <p class="card-text">DuocUC fue fundado por iniciativa de un grupo de estudiantes de la Pontificia Universidad Católica de Chile en el contexto de la reforma universitaria, bajo el nombre de Departamento Universitario Obrero y Campesino,​ por el primer rector laico de la Universidad Católica.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            {% endblock %}

@@ -1,0 +1,104 @@
+{% extends "base_generic.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+
+    <title>Toffe</title>
+    <link rel="icon" href="{% static 'img/icon.jpg' %}">
+  </head>
+
+  <body>
+    {% block content %}
+
+    <section  class="jumbotron bg-info">
+      <div class="container ">
+        <h1 class="h1"> <strong>Novedades de las Recetas</strong> </h1>
+        <p class="h2"><strong>Desde los pasteles hasta las bebidas.</strong> </p>
+      </div>
+    </section>
+
+      
+    
+    <section class="main container">
+      <nav aria-label="breadcrumb">
+        <section class="col-md-9">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'novedades' %}">Categoría</a></li>
+            <li class="breadcrumb-item active">Novedades</li>
+          </ol>
+          <article class="post clearfix">
+            <a href="{% url 'pie' %}"  class="thumb pull-left">
+              <img src="{% static 'img/pie1.jpg' %}" alt="" style="float: left;" width="400" height="250"><h2 class="h2-2"> <strong> Receta pie de limon, paso a paso </strong></h2>
+            </a>
+            <p><span class="psfecha">14 de Octubre del 2020</span> por <span class="posts autor"><a href="#">Diego Jorquera</a></span></p>
+            <p class="pcontenido text-justify">
+              El pie de limón es una receta tradicional dentro de la cocina francesa, Estado Unidense y de Reino Unido, aunque es un postre conocido y consumido
+              por todo el mundo. Consiste en una base de masa quebradiza u hojaldre, relleno de crema de limon, en ocaciones se cubre con una capa de merengue.
+            </p>
+
+            <div class="botones">
+              <a href="{% url 'pie' %}" class="btn btn-info">Leer Más</a>
+            </div>
+          </article>
+        </section>
+      </nav>
+    </section>
+
+    <section class="main container">
+      <section class="col-md-9"> 
+        <article class="post clearfix">
+          <a href="{% url 'capu' %}" class="thumb pull-left">
+            <img src="{% static 'img/cap1.jpg' %}" alt="" style="float: left;" width="400" height="250"><h2 class="h2-2"><strong>Receta de capuchino, paso a paso</strong></h2>
+          </a>
+          <p><span class="psfecha">13 de Octubre del 2020</span> por <span class="posts autor"><a href="#">Bernardo Valderrama</a></span></p>
+          <p class="pcontenido text-justify">
+            Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para otorgarle cremosidad. Hoy en día, el capuchino no solo es común en Italia sino también en todo el mundo. El capuchino se extendió inicialmente por toda Europa, adquiriendo su forma definitiva alrededor de 1950, para luego llegar a Sudamérica, 
+                popularizándose en países como Argentina, Brasil, Bolivia, Chile, Paraguay, Perú y Uruguay.
+          </p>
+          <div class="botones">
+            <a href="{% url 'capu' %}" class="btn btn-info">Leer Más</a>
+          </div>
+        </article>
+      </section>
+    </section>
+  
+
+    <section class="main container">
+        <section class="col-md-9"> 
+          <article class="post clearfix">
+            <a href="{% url 'pret' %}"  class="thumb pull-left">
+              <img src="{% static 'img/pret1.jpg' %}" alt="" style="float: left;" width="400" height="250"><h2 class="h2-2"><strong>Receta de pretzel, paso a paso</strong></h2>
+            </a>
+            <p><span class="psfecha">12 de Octubre del 2020</span> por <span class="posts autor"><a href="#">Bastian Pinto</a></span></p>
+            <p class="pcontenido text-justify">
+              Un pretzel es un tipo de galleta o bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado. Su origen se encuentra en Alemania, y es bastante popular en Alsacia, la Suiza alemana, Austria y América del Norte.
+            </p>
+
+            <div class="botones">
+              <a href="{% url 'pret' %}" class="btn btn-info">Leer Más</a>
+            </div>
+          </article>
+        </section>
+    </section>
+    
+   
+   
+
+  </body>
+  
+ 
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+{% endblock %}
