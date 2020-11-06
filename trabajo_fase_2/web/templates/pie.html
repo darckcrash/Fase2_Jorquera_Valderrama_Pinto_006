@@ -1,0 +1,108 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+
+    <title>Toffe</title>
+    <link rel="icon" href="{% static 'img/icon.jpg' %}">
+  </head>
+
+  <body>
+    <header>
+      
+    </header>
+    <section  class="jumbotron bg-info">
+      <div class="container ">
+        <h1 class="h1"> <strong>Novedades de las Recetas</strong> </h1>
+        <p class="h2"><strong>Desde los pasteles hasta las bebidas.</strong> </p>
+      </div>
+    </section>
+    </header>
+      
+    
+    <section class="main container">
+      <nav aria-label="breadcrumb">
+        <section class="col-md-9">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'novedades' %}">Categoría</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'dulces' %}">Recetas dulces</a></li>
+            <li class="breadcrumb-item active">Pie de Limón</li>
+          </ol>
+          <article class="post clearfix">
+            <a href="#" class="thumb pull-left">
+              <img src="{% static 'img/pie1.jpg' %}" alt="" style="float: left;" width="400" height="250"><h2 class="h2-2"> <strong> Receta pie de limon, paso a paso </strong></h2>
+            </a>
+            <p><span class="psfecha">14 de Octubre del 2020</span> por <span class="posts autor"><a href="#">Diego Jorquera</a></span></p>
+            <p class="pcontenido text-justify">
+              El pie de limón es una receta tradicional dentro de la cocina francesa, Estado Unidense y de Reino Unido, aunque es un postre conocido y consumido
+              por todo el mundo. Consiste en una base de masa quebradiza u hojaldre, relleno de crema de limon, en ocaciones se cubre con una capa de merengue.
+              <p>Ingredientes:
+                <ul type="circle">
+                  <li>2 tazas de harina</li>
+                  <li>4 huevos</li>
+                  <li>1/2 taza de jugo de limón</li>
+                  <li>Una taza de leche condensada</li>
+                  <li>125 gr. de mantequilla</li>
+                  <li>Una taza de azúcar</li>
+                  <li>3 cucharadas de azúcar flor</li>
+                  <li>2 cdtas. de polvos de hornear</li>
+                </ul>
+              </p>
+              <p>
+                Preparación:
+                <ol type="1">
+                  <li>Lo primero que debes hacer es preparar la masa base del pie. Para ello,
+                     mezcla la harina con los polvos de hornear, un huevo, la mantequilla y
+                     el azúcar flor. Deberás amasar hasta obtener una masa suave y blanda. </li><hr>
+
+                  <li>Cuando la tengas, forra todo el molde con la masa y hornéalo durante 10 minutos a 170 ºC.
+                     Cuando esté listo, retíralo y resérvalo.</li><hr>   
+
+                  <li>Ahora es el turno del relleno del pie de limón. Mezcla el zumo de limón con la leche condensada hasta formar una crema suave. 
+                    Vierte esta crema sobre la masa que horneaste en el paso anterior y reserva el pastel.</li><hr>   
+
+                  <li>Ahora que ya tienes el relleno, solo falta el merengue para la cubierta. Para ello, separa las claras de las yemas de los tres
+                     huevos restantes y bate las claras a punto de nieve. Cuando estén casi listas, incorpora poco a poco el azúcar y sin dejar de batir.
+                     </li><hr>
+
+                  <li>Con la ayuda de una manga pastelera, reparte el merengue con forma de picos. Si no dispones de manga, simplemente coge una espátula y
+                     repártelo por toda la parte superior del pie de limón. Ahora, hornea el pastel durante unos minutos para que el merengue endurezca
+                      ligeramente y se dore.</li><hr>   
+
+                  <li>
+                    Cuando esté listo, retíralo, deja que se enfríe y ya puedes servir el pie de limón y merengue. </li>    
+
+                     
+                </ol>
+              </p>  
+            </p>
+
+          </article>
+        </section>
+      </nav>
+    </section>
+
+    
+    
+   
+   
+
+  </body>
+  
+ 
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+{% endblock %}

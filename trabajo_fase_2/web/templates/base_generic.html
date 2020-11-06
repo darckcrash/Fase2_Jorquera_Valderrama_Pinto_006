@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+   <title>Local Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- Add additional CSS in static file -->
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">   
+
+  </head>
+  <body>
+
+    <div>
+      <nav class="navbar navbar-expand-md navbar-dark text-white bg-dark">
+        <a class="navbar-brand" href="#">Toffee</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>      
+        <div class="collapse navbar-collapse" id="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true">Categorias</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="{% url 'novedades' %}">Novedades</a>
+                <a class="dropdown-item" href="{% url 'dulces' %}">Recetas dulces</a>
+                <a class="dropdown-item" href="{% url 'saladas' %}">Recetas saladas</a>
+                <a class="dropdown-item" href="{% url 'bebidas' %}">Bebidas Frias/calientes </a>
+              </div>
+            </li>
+          </ul>        
+    </nav> 
+    </div>  
+    {% block content %} {% endblock %}
+    <footer class="container">
+      <p class="float-right"><a href="#">Ir al inicio</a></p>
+      <p>&copy; 2019-2020 Bastian Pinto-Bernardo Valderrama-Diego Jorquera. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>   
+  </body>
+</html>
+

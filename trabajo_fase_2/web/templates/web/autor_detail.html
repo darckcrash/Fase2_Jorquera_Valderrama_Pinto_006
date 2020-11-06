@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Autor: {{ autor }} </h1>
+<p>{{autor.fechanac}}-{% if autor.fechamuerte %}{{autor.fechamuerte}}{% endif %} </p>
+
+<div style="margin-left:20px;margin-top:20px;">
+<h4>Recetas</h4>
+
+<dl>    
+{% for receta in autor.receta_set.all %}
+    <dt><a href="{% url 'receta-detail' receta.pk %}"></a></dt>
+    <dd>{{receta.receta}}</dd>
+    {% endfor %}
+</dl>
+</div>
+
+
+
+{% endblock %}
