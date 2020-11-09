@@ -56,6 +56,7 @@ def capu(request):
         request, 
         'capu.html',
 )
+
 class AutorCreate(CreateView):
     model = Autor
     fields = ['pnombre', 'papellido', 'fechanac', 'fechamuerte']
